@@ -1,0 +1,22 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description></description>
+    <executionEnabled>true</executionEnabled>
+    <group>Mgmt</group>
+    <id>test</id>
+    <loglevel>INFO</loglevel>
+    <name>test</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>echo "Hello"</exec>
+      </command>
+      <command>
+        <exec>sleep 20</exec>
+      </command>
+    </sequence>
+    <uuid>test</uuid>
+  </job>
+</joblist>
