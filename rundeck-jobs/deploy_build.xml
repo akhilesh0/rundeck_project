@@ -1,0 +1,31 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description>Deploy war on tomcat</description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>false</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <group>Deploy</group>
+    <id>6b91139c-4bbd-4b19-ad08-2e854c9f379c</id>
+    <loglevel>INFO</loglevel>
+    <name>deploy_build</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>name: jenkins</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <script><![CDATA[wget http://35.229.95.176/repo/mywebsiteProject-mywebsiteProject0.0.1-SNAPSHOT.war -P /root/tomcat/webapps/]]></script>
+        <scriptargs />
+      </command>
+    </sequence>
+    <uuid>6b91139c-4bbd-4b19-ad08-2e854c9f379c</uuid>
+  </job>
+</joblist>
